@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question generator</h1>
+    
+    <div class="question_customizer_wrapper">
+        <form action="" method="post" class="question_customizer">
+            <select name="type[]">
+                <option value="singleanswer">singleanswer</option>
+                <option value="multipleanswer">multipleanswer</option>
+                <option value="openanswer">extendanswer</option>
+            </select>
+            <select name="description[]">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+            <input type="submit" value="generate" class="question_customizer__generator">
+        </form>  
+    </div>
+    
+    <div class="questions">
+        
+        <div class="question">
+            <div class="question__header">
+                <span class="question__destroy">x</span>
+            </div>
+            <form action="" method="post" class="question__form">
+                <p class="question__title">Сколько у человека пар реберных дуг?</p>
+                <div class="question__answer1">
+                    <label>
+                        <input type="radio" name="answer">
+                        <span>Десять</span>
+                    </label>
+                </div>
+                <div class="question__answer2">
+                    <label>
+                        <input type="radio" name="answer">
+                        <span>Восемь</span>
+                    </label>
+                </div>
+                <div class="question__answer3">
+                    <label>
+                        <input type="radio" name="answer">
+                        <span>Семь</span>
+                    </label>
+                </div>
+                <div class="question__answer4">
+                    <label>
+                        <input type="radio" name="answer">
+                        <span>шесть</span>
+                    </label>
+                </div>
+                <input type="submit" value="answer" class="question__submit">
+            </form>
+        </div>
+
+        <div class="question">
+            <div class="question__header">
+                <span class="question__destroy">x</span>
+            </div>
+            <form action="" method="post" class="question__form">
+                <p class="question__title">Сколько у человека пар реберных дуг?</p>
+                <div class="question__answer1">
+                    <label>
+                        <input type="radio" name="answer">
+                        <span>Десять</span>
+                    </label>
+                </div>
+                <div class="question__answer2">
+                    <label>
+                        <input type="radio" name="answer">
+                        <span>Восемь</span>
+                    </label>
+                </div>
+                <div class="question__answer3">
+                    <label>
+                        <input type="radio" name="answer">
+                        <span>Семь</span>
+                    </label>
+                </div>
+                <div class="question__answer4">
+                    <label>
+                        <input type="radio" name="answer">
+                        <span>шесть</span>
+                    </label>
+                </div>
+                <input type="submit" value="answer" class="question__submit">
+            </form>
+        </div>
+
+        <div class="question">
+            <div class="question__header">
+                <span class="question__destroy">x</span>
+            </div>
+            <form action="" method="post" class="question__form">
+                <p class="question__title">Сколько у человека пар реберных дуг?</p>
+                <input type="checkbox" name="answer1"><span>Десять</span>
+                <input type="checkbox" name="answer2"><span>Восемь</span>
+                <input type="checkbox" name="answer3"><span>Семь</span>
+                <input type="checkbox" name="answer4"><span>Шесть</span>
+                <input type="submit" value="answer" class="question__submit">
+            </form>
+        </div>
+    </div>
+    <script src="index.ts"></script>
+</body>
+</html>
